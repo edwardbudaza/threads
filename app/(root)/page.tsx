@@ -1,7 +1,10 @@
- export default function Home() {
-  return ( 
-    <main className=""> 
-      <h1>Hello world!</h1>
-    </main>
+//app/page.tsx
+import { UserButton } from "@clerk/nextjs";
+
+export default function Home() {
+  return (
+    <div>
+      <UserButton afterSignOutUrl="/"/>
+    </div>
   )
 }
